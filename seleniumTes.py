@@ -13,10 +13,6 @@ connect.click()
 connect_metamask = driver.find_element(By.CSS_SELECTOR, '[class*="g5kl0l0"]')
 connect_metamask.click()
 
-# Before using WebDriverWait
-# get_wallet_button = driver.find_element(By.XPATH, "//div[text()='GET']")
-# get_wallet_button.click()
-
 # After using WebDriverWait
 get_wallet_button = WebDriverWait(driver, 10).until(
     EC.element_to_be_clickable((By.XPATH, "//div[text()='GET']"))
