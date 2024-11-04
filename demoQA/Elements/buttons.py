@@ -27,7 +27,6 @@ action.context_click(rightClick).perform()
 time.sleep(3)
 
 dynamicClick = driver.find_element(By.XPATH, "//button[text()='Click Me']")
-# action.click(dynamicClick).perform()
 dynamicClick.click()
 
 time.sleep(3)
