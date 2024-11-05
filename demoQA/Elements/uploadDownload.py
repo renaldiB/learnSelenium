@@ -7,7 +7,6 @@ import time
 # open cmd (run as administrator) and type "pip install pyautogui"
 
 driver = webdriver.Chrome()
-
 driver.get("https://demoqa.com/upload-download")
 
 # Click Download button
