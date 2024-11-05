@@ -5,7 +5,7 @@ import time
 driver = webdriver.Chrome()
 driver.get("https://demoqa.com/broken")
 
-validLink =driver.find_element(By.XPATH, "//a[contains(text(), 'Valid Link')]")
+validLink = driver.find_element(By.XPATH, "//a[contains(text(), 'Valid Link')]")
 validLink.click()
 
 time.sleep(3)
@@ -13,7 +13,7 @@ time.sleep(3)
 # Back to the previous page
 driver.back()
 
-brokenLink = driver.find_element(By.XPATH, "//a[contains(text(), 'Broken Link')]")
+brokenLink = driver.find_element(By.LINK_TEXT, "Click Here for Broken Link")
 brokenLink.click()
 
 time.sleep(3)
