@@ -21,6 +21,9 @@ time.sleep(3)
 # )
 # action.double_click(doubleClick).perform()
 
+# Simplified version
+# ActionChains(driver).double_click(driver.find_element(By.ID, 'doubleClickBtn')).perform()
+
 rightClick = driver.find_element(By.ID, 'rightClickBtn')
 action.context_click(rightClick).perform()
 
