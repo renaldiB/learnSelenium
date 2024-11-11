@@ -9,6 +9,10 @@ driver = webdriver.Chrome()
 driver.maximize_window()
 driver.get("https://demoqa.com/automation-practice-form")
 
+# If you encounter an error while trying close the modal, you can add the following code:
+# 
+# driver.execute_script("document.body.style.zoom='80%'")
+
 driver.find_element(By.ID, "firstName").send_keys("Renaldi")
 driver.find_element(By.ID, "lastName").send_keys("Bong")
 
